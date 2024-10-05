@@ -5,7 +5,7 @@ const App = () => {
                 <h1 className="text-4xl font-bold">Galeria de Fotos</h1>
             </header>
             <div>
-
+                test
             </div>
         </div>
     );

@@ -1,3 +1,5 @@
+import { MainRoutes } from "./routes/MainRoutes";
+
 const App = () => {
     return (
         <div>
@@ -5,7 +7,7 @@ const App = () => {
                 <h1 className="text-4xl font-bold">Galeria de Fotos</h1>
             </header>
             <div>
-                test
+                <MainRoutes />
             </div>
         </div>
     );

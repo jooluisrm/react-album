@@ -6,9 +6,9 @@ import { NotFound } from "../pages/NotFound";
 
 export const MainRoutes = () => {
     return useRoutes([
-        {path: '/', element: <Home />},
-        {path: '/album', element: <Album />},
-        {path: '/photo', element: <Photo />},
-        {path: '*', element: <NotFound />}
+        { path: '/', element: <Home /> },
+        { path: '/album/:id', element: <Album /> },
+        { path: '/photo/:id', element: <Photo /> },
+        { path: '*', element: <NotFound /> }
     ]);
 };

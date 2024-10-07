@@ -39,7 +39,12 @@ export const Album = () => {
 
     useEffect(() => {
         const CarregarAlbum = async () => {
-            let json = await Api.CarregarAlbums(idAlbum +1);
+            if (idAlbum === 0) {
+                let json = await Api.CarregarAlbums(idAlbum -1);
+                setNomeAlbum(json);
+                console.log(idAlbum);
+            }
+            let json = await Api.CarregarAlbums(idAlbum + 1);
             setNomeAlbum(json);
             console.log(idAlbum);
         };
@@ -48,7 +53,7 @@ export const Album = () => {
         }
 
 
-    }, [idAlbum]);
+    }, [nomeAlbum]);
 
     return (
         <div>
